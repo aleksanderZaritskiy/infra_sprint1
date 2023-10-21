@@ -1,6 +1,6 @@
 IP: 84.201.177.10;
-name_taski: http://deploytaskiproject.sytes.net;
-name_kittygram: http://kittyzaritskiy.sytes.net;
+name_taski: https://deploytaskiproject.sytes.net;
+name_kittygram: https://kittyzaritskiy.sytes.net;
 login: admin;
 password: admin22;
 
