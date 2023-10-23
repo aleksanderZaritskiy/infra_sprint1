@@ -25,18 +25,7 @@ server {
 
 }
 
-server {
-    if ($host = deploytaskiproject.sytes.net) {
-        return 301 https://$host$request_uri;
-    } # managed by Certbot
 
-
-        listen 80;
-        server_name 84.201.177.10 deploytaskiproject.sytes.net;
-    return 404; # managed by Certbot
-
-
-}
 #KITTYGRAM SERVER
 
 server {
@@ -71,15 +60,16 @@ server {
 
 }
 
-
 server {
-    if ($host = kittyzaritskiy.sytes.net) {
+    if ($host = deploytaskiproject.sytes.net || $host = kittyzaritskiy.sytes.net) {
         return 301 https://$host$request_uri;
-    } # managed by Certbot
+    }
 
 
-        server_name 84.201.177.10 kittyzaritskiy.sytes.net;
-    listen 80;
+        listen 80;
+        server_name deploytaskiproject.sytes.net;
+        server_name kittyzaritskiy.sytes.net;
+
     return 404; # managed by Certbot
 
 
